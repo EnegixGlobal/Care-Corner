@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaChevronLeft, FaChevronRight, FaCheckCircle } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
+import {Link} from 'react-router-dom'
 
 import banner1 from "../assets/banner5.png";
 import banner2 from "../assets/banner2.png";
@@ -805,8 +806,8 @@ Your journey to a healthier, happier life starts here.
     <div className="flex flex-col sm:flex-row gap-4 mt-6">
 
       {/* Contact Us Button */}
-      <a
-        href="#contact"
+      <Link
+        to="/contact"
         className="inline-flex items-center justify-center bg-white text-black border-2 border-white rounded-full px-6 py-3 font-semibold text-base sm:text-lg hover:bg-gray-100 transition-all duration-300"
       >
         Contact Us
@@ -820,15 +821,15 @@ Your journey to a healthier, happier life starts here.
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
         </svg>
-      </a>
+      </Link>
 
       {/* Our Services Button */}
-      <a
-        href="#services"
+      <Link
+        to="/services"
         className="inline-flex items-center justify-center text-white border-2 border-white rounded-full px-6 py-3 font-semibold text-base sm:text-lg hover:bg-white hover:text-[#057C8B] transition-all duration-300"
       >
         Our Services
-      </a>
+      </Link>
     </div>
 
   </div>
