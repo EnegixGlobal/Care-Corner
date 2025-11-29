@@ -50,10 +50,9 @@ import { FaStar } from "react-icons/fa";
 import client1 from "../assets/client.png";
 import client2 from "../assets/blog.png";
 import client3 from "../assets/blog1.avif";
+//video
 
-import youtube1 from "../assets/videoplayback1.mp4";
-import youtube2 from "../assets/videoplayback2.mp4";
-import youtube3 from "../assets/videoplayback 3.mp4";
+import mvideo from '../assets/mvideo.mp4'
 
 // BLog section
 import blogImg from "../assets/blog1.avif"; // import at top of your file
@@ -457,9 +456,9 @@ export default function Home() {
             </div>
 
             {/* Right: Video */}
-            <div className="flex-1 flex justify-center md:justify-end border-2 border-red-500">
+            <div className="flex-1 flex justify-center md:justify-end">
               <video
-                src={appointmentVideo}
+                src={mvideo}
                 autoPlay
                 loop
                 muted

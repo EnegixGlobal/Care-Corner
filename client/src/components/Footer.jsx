@@ -7,15 +7,16 @@ import {
   FaGoogle,
 } from "react-icons/fa";
 import logo from "../assets/weblogo.png";
+import {Link} from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer className="w-full bg-[#E7EFF2] text-[#233957] pt-10 mt-10 relative">
-
       {/* Main Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 
-                      px-5 md:px-0 pb-16 md:pb-24">
-
+      <div
+        className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 
+                      px-5 md:px-0 pb-16 md:pb-24"
+      >
         {/* LEFT SECTION */}
         <div>
           <img src={logo} alt="Logo" className="w-40 h-auto mb-4" />
@@ -36,12 +37,29 @@ export default function Footer() {
 
         {/* MIDDLE MENU */}
         <div className="flex flex-col gap-3 text-md font-normal">
-          <p className="cursor-pointer hover:text-[#057C8B]">Relationship Counselling</p>
-          <p className="cursor-pointer hover:text-[#057C8B]">Depression</p>
-          <p className="cursor-pointer hover:text-[#057C8B]">Anxiety</p>
-          <p className="cursor-pointer hover:text-[#057C8B]">Nida's Blog</p>
-          <p className="cursor-pointer hover:text-[#057C8B]">About</p>
-          <p className="cursor-pointer hover:text-[#057C8B]">Contact</p>
+          <Link to="/services" className="cursor-pointer hover:text-[#057C8B]">
+            Relationship Counselling
+          </Link>
+
+          <Link to="/services" className="cursor-pointer hover:text-[#057C8B]">
+            Depression
+          </Link>
+
+          <Link to="/services" className="cursor-pointer hover:text-[#057C8B]">
+            Anxiety
+          </Link>
+
+          <Link to="/blog" className="cursor-pointer hover:text-[#057C8B]">
+            Nida's Blog
+          </Link>
+
+          <Link to="/about" className="cursor-pointer hover:text-[#057C8B]">
+            About
+          </Link>
+
+          <Link to="/contact" className="cursor-pointer hover:text-[#057C8B]">
+            Contact
+          </Link>
         </div>
 
         {/* RIGHT SOCIAL ICONS */}
@@ -49,65 +67,61 @@ export default function Footer() {
           <h3 className="text-lg font-semibold">Follow Us</h3>
 
           <div className="flex items-center gap-5 text-2xl">
-
             {/* Instagram */}
-            <a
-              href="https://www.instagram.com/care_corner_ranchi"
+            <Link
+              to="https://www.instagram.com/care_corner_ranchi"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#057C8B] transition"
             >
               <FaInstagram />
-            </a>
+            </Link>
 
             {/* Facebook */}
-            <a
-              href="https://www.facebook.com/CareCornerRanchi/"
+            <Link
+              to="https://www.facebook.com/CareCornerRanchi/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#057C8B] transition"
             >
               <FaFacebookF />
-            </a>
+            </Link>
 
             {/* Twitter */}
-            <a
-              href="https://twitter.com"
+            <Link
+              to="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#057C8B] transition"
             >
               <FaTwitter />
-            </a>
+            </Link>
 
             {/* Google Maps */}
-            <a
-              href="https://www.google.com/maps/place/Care+Corner/@23.3938047,85.3518069"
+            <Link
+              to="https://www.google.com/maps/place/Care+Corner/@23.3938047,85.3518069"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#057C8B] transition"
             >
               <FaGoogle />
-            </a>
-
+            </Link>
           </div>
         </div>
-
       </div>
 
       {/* Bottom Strip */}
       <div className="w-full bg-[#057C8B] text-white text-center py-5 md:py-6 text-sm">
         Care Corner © 2025. All Rights Reserved. Powered by{" "}
-        <a
-          href="https://www.enegixwebsolutions.com/"
+        <Link
+          to="https://www.enegixwebsolutions.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="underline"
         >
           Enegix Web Solutions.
-        </a>
+        </Link>
       </div>
-
     </footer>
   );
 }
