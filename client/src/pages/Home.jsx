@@ -310,7 +310,7 @@ export default function Home() {
                   <FaCheckCircle className="text-[#057C8B]" />
                   <div>
                     <span className="font-semibold text-black">
-                      Qualified Physiotherapist
+                      Qualified Psychologist
                     </span>
                     <br />
                     <span className="text-gray-600 text-sm">
