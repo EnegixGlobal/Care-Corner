@@ -41,7 +41,7 @@ const Contact = () => {
       // 👇 Yeh value send hogi but UI me nahi dikhegi
       formData.append("company", "Care Corner");
 
-      const response = await fetch("https://formspree.io/f/mldwylll", {
+      const response = await fetch("https://formspree.io/f/mldw", {
         method: "POST",
         body: formData,
         headers: { Accept: "application/json" },
